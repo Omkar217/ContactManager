@@ -79,6 +79,11 @@ public class Contact {
 	
 	public Contact mergeContactData(Contact contact)
 	{
-		
+		Contact newContact  =  new Contact(name);
+		newContact.emails = new HashSet<>(this.emails);
+		newContact.phones = new HashSet<>(this.phones);
+		newContact.emails.addAll(emails);
+		newContact.phones.addAll(phones);
+		return newContact;
 	}
 }
