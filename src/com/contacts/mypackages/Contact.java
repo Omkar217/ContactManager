@@ -79,7 +79,7 @@ public class Contact {
 	
 	public Contact mergeContactData(Contact contact)
 	{
-		Contact newContact  =  new Contact(name);
+		Contact newContact  =  new Contact(name);//Here I have updated the file, please look into this.
 		newContact.emails = new HashSet<>(this.emails);
 		newContact.phones = new HashSet<>(this.phones);
 		newContact.emails.addAll(emails);
